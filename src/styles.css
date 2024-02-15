@@ -9,30 +9,53 @@ body {
   font-family: var(--default-font);
 }
 
-.hero h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+h1 {
   font-size: 96px;
   line-height: 1.5;
 }
 
-.hero h2 {
-  font-size: 24px;
-  color: #272142;
-  line-height: 2;
-  font-family: var(--default-font);
+h2 {
+  font-size: 64px;
 }
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
 .hero {
   text-align: center;
   background: var(--background-color);
   padding: 160px 20px;
 }
+
 .hero p {
   font-size: 36px;
   font-weight: bold;
   margin: 0 auto;
+  color: #272142;
 }
 
-.hero .btn {
+.hero h2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  font-family: var(--heading-font);
+  margin: 0 auto;
+}
+
+.btn-branding {
   color: white;
   background: var(--primary-color);
   border-radius: 4px;
@@ -40,25 +63,17 @@ body {
   border: none;
   font-size: 18px;
   line-height: 27px;
+  text-decoration: none;
 }
-.hero .btn:hover {
+
+.btn-branding:hover {
   color: var(--primary-color);
   background: var(--background-color);
   border: 1px solid var(--primary-color);
   transition: all 200ms ease-in-out;
 }
-#description {
-  font-size: 16px;
-  color: rgba(39, 33, 66, 0.7);
-  font-weight: normal;
-  line-height: 30px;
-}
-h2 {
-  font-size: 59px;
-  font-family: var(--heading-font);
-}
 
-.btn {
+.btn-link {
   font-size: 16px;
   line-height: 27px;
   border-radius: 4px;
@@ -66,19 +81,29 @@ h2 {
   border: 1px solid var(--primary-color);
   background: white;
   color: var(--primary-color);
+  text-decoration: none;
 }
-.btn:hover {
+.btn-link:hover {
   background: var(--primary-color);
   color: white;
   transition: all 200ms ease-in-out;
 }
+
+.project-description {
+  padding: 120px 60px;
+}
+
 img {
   width: 456px;
   height: 456px;
   margin-top: 110px;
 }
-.project-description {
-  padding: 120px 60px;
+
+#image-user {
+  font-size: 200px;
+  margin-top: 50px;
+  width: 600px;
+  height: 900px;
 }
 
 @media (max-width: 960px) {
@@ -97,6 +122,9 @@ img {
   }
   .hero h2 {
     margin: 0 auto;
+  }
+  .container {
+    margin-bottom: 20px;
   }
   .project-description {
     padding: 0;
