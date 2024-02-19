@@ -24,12 +24,46 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Portfolio Project</title>
+    <meta
+      name="description"
+      content="Barbara is a front-end developer based in united kingdom currently learning HTML, CSS, JavaScript and React"
+    />
+    <title>About Front-end Developer Portfolio Template</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+            src="images/logo.png"
+            alt="shecodes logo"
+            class="logo d-none d-md-block"
+          />
+          <img
+            src="images/logo-small.png"
+            alt="small-logo"
+            class="logo d-block d-md-none"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About me">About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Work">Work</a>
+          </li>
+          <li>
+            <a href="contact.html" title="Contact me">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <div class="content">
             <h1 class="mb-4">Hi I am Barbara Moya</h1>
             <h2 class="mb-4">Front-end Developer, based in United Kingdom.</h2>
@@ -39,16 +73,66 @@
               everything is well explained, homework and deadlines are good for
               keep focus..
             </p>
-            <a href="#" class="btn-branding">View all project</a>
+            <a href="/work.html" class="btn-branding mb-5">View all project</a>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <i
             class="fa-regular fa-user mt-5 text-center d-block"
             id="image-user"
           ></i>
         </div>
       </div>
+      <div class="content-container container p-2 mt-5">
+        <div class="content p-0">
+          <h1 class="mb-5">Let's get in touch!</h1>
+          <div class="hero row p-3">
+            <div class="col-sm-8 mt-2">
+              <h3 class="text-center" id="work-contact">Work Iquiry</h3>
+              <p class="text-muted text-center mt-3">
+                Let's work together and i'll help you by all my best
+              </p>
+            </div>
+            <div class="col-sm-4 mt-4">
+              <a href="mailto:barbaramoyaz20@gmail.com" class="btn btn-branding"
+                >Let's talk here</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="d-flex justify-content-center">
+          <a
+            href="mailto:barbaramoyaz20@gmail.com"
+            class="email-link mb-3"
+            title="Email Barbara"
+            >barbaramoyaz20@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="/" target="_blank" title="Instagram Profile">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/barbsuk20"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/barbara-moya-0239582ab/"
+            target="_blank"
+            title="Linkedin Profile"
+          >
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p id="coded-by">
+          👩‍💻 This project was coded by Barbara Moya and it is open-sourced
+        </p>
+      </footer>
     </div>
   </body>
 </html>
